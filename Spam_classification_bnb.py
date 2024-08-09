@@ -134,6 +134,7 @@ if text_input:
 # Footer
 st.markdown("""
 <div style="text-align: center; margin-top: 50px;">
-    <p>Developed with 💖 using Streamlit</p>
+    <p>
+    </p>
 </div>
 """, unsafe_allow_html=True)
