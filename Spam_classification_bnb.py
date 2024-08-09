@@ -67,7 +67,9 @@ st.set_page_config(page_title="Spam Classification", page_icon="💬", layout="w
 st.title("Email Spam Classification Using Bernoulli Naive Bayes Model")
 st.write("""
 This app uses a Bernoulli Naive Bayes (BNB) model to predict whether a given email text is a scam or legitimate.
-You can copy and paste email text or enter the text by typing, and the model will classify it as legitimate, or scam.
+You can copy and paste email text or enter the text by typing, and the model will classify it as legitimate, or scam. 
+Scroll below to Enter or Type your text. Contact **Jacob Akubire** @jaakubire@gmail.com
+for any concerns
 """)
 
 # Add some styling
@@ -102,7 +104,7 @@ header, footer {
 
 
 image = Image.open("Spam_cloud.png")
-st.image(image, caption='Static', use_column_width=True)
+st.image(image, use_column_width=True)
 
 # Input text
 text_input = st.text_input("Enter email text here:")
@@ -124,9 +126,9 @@ if text_input:
 
     # Display the result
     if sentiment == "ham":
-        st.write(f"The email text: {text_input} is  **predicted** as  **Legitimate**.")
+        st.write(f"**The email text**: {text_input} is  **predicted** as  **Legitimate**.")
     else:
-       st.write(f"The email text: {text_input} is  **predicted** as  **Scam**.")
+       st.write(f"**The email text**: {text_input} is  **predicted** as  **Scam**.")
        
 
 # Footer
