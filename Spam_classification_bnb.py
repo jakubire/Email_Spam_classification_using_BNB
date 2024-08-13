@@ -107,7 +107,7 @@ image = Image.open("Spam_cloud.png")
 st.image(image, use_column_width=True)
 
 # Input text
-text_input = st.text_input("Enter email text here:")
+text_input = st.text_input("Enter or copy and paste email text here:")
 
 if text_input:
     # Vectorize the input text
