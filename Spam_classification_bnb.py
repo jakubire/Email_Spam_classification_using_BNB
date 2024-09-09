@@ -66,10 +66,10 @@ st.set_page_config(page_title="Spam Classification", page_icon="💬", layout="w
 # Add a title and description
 st.title("Email Spam Classification Using Bernoulli Naive Bayes Model")
 st.write("""
-This app uses a Bernoulli Naive Bayes (BNB) model to predict whether a given email text is a scam or legitimate.
+##This app uses a Bernoulli Naive Bayes (BNB) model to predict whether a given email text is a scam or legitimate.
 You can copy and paste email text or enter the text by typing, and the model will classify it as legitimate, or scam. 
 Scroll below to Enter or Type your text. Contact **Jacob Akubire** @jaakubire@gmail.com
-for any concerns
+for any concerns##
 """)
 
 # Add some styling
